@@ -134,11 +134,13 @@ jobs:
   # deploys when commits reach main. This job is a status gate that logs the
   # deployment trigger event for visibility.
   #
-  # To configure Railway deployment:
-  # 1. Go to https://railway.app → New Project → Deploy from GitHub repo
-  # 2. Select MuhibChy/perfectitsecurity → Grant access
-  # 3. Set required env vars in Railway dashboard (see DEPLOYMENT_GUIDE.md)
-  # 4. Railway will automatically deploy on every push to main.
+# To configure Railway deployment (see DEPLOYMENT_GUIDE.md):
+# 1. Go to https://railway.app → New Project → Deploy from GitHub repo
+# 2. Select MuhibChy/aisecurity3D → Grant access
+# 3. Set required env vars in Railway dashboard (APP_KEY, APP_URL, APP_ENV=production, APP_DEBUG=false)
+# 4. Railway will automatically deploy on every push to main.
+# Note: GitHub Pages cannot run this Laravel/PHP backend. Pages/static export
+# (scripts/export-static-site.php → dist/) is design-preview only, not the full app.
   # ──────────────────────────────────────────────────────────────────────────────
   deploy-railway:
     name: Trigger Railway Deployment

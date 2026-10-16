@@ -1,6 +1,8 @@
-# Railway Cloud Deployment Guide — PerfectITSecurity
+# Railway Cloud Deployment Guide — AI Security 3D
 
-> This document explains how to deploy PerfectITSecurity as a fully live, publicly accessible website using **Railway** (free tier available).
+> This document explains how to deploy AI Security 3D (Laravel + Vite + Three.js) as a fully live, publicly accessible website using **Railway**.
+>
+> GitHub Pages cannot run this backend (no PHP/Laravel, database, auth, or payments). Use Railway for the live app; `scripts/export-static-site.php` → `dist/` is a static design preview only.
 
 ---
 
@@ -29,7 +31,7 @@ Railway is the recommended hosting provider because:
 
 1. In the Railway dashboard, click **"New Project"**
 2. Select **"Deploy from GitHub repo"**
-3. Click **"Configure GitHub App"** → grant Railway access to **MuhibChy/perfectitsecurity** (private repo)
+3. Click **"Configure GitHub App"** → grant Railway access to **MuhibChy/aisecurity3D**
 4. Select the repository from the list
 5. Railway will auto-detect the PHP/Nixpacks configuration from `nixpacks.toml`
 6. The first build will start automatically
@@ -69,7 +71,7 @@ In the Railway project dashboard, open **Variables** and set the following:
 
 1. In Railway, go to your project → **Settings** → **Networking**
 2. Click **"Generate Domain"** (free `*.up.railway.app` URL)
-3. Copy the URL (e.g. `https://perfectitsecurity-production.up.railway.app`)
+3. Copy the URL (e.g. `https://aisecurity3d-production.up.railway.app`)
 4. Set `APP_URL` in Variables to this exact URL
 
 ---

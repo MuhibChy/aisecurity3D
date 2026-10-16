@@ -1,8 +1,9 @@
-# PerfectITSecurity — Global IT Support & Cybersecurity Platform
+# AI Security 3D — Global IT Support & Cybersecurity Platform
 
-> Enterprise-grade international IT support, ITSM, and cybersecurity operations platform built with Laravel, Blade, Alpine.js, Tailwind CSS, and Vite.
+> Enterprise-grade international IT support, ITSM, and cybersecurity operations platform built with Laravel, Blade, Alpine.js, Tailwind CSS, Vite, and Three.js 3D.
 >
-> 🌐 **Live Website Design Demo**: **[https://muhibchy.github.io/perfectitsecurity/](https://muhibchy.github.io/perfectitsecurity/)**
+> 🚂 **Live application (full Laravel backend):** deploy this repo to Railway (see `DEPLOYMENT_GUIDE.md`, `nixpacks.toml`, `railway.json`, `deploy.sh`). GitHub Pages cannot execute PHP/Laravel.
+> 🎨 **Static design preview only (no backend):** `scripts/export-static-site.php` → `dist/` — forms/auth on static hosting are simulated demo behaviour.
 
 ---
 
@@ -141,8 +142,8 @@ Follow these steps to set up the project locally in your development environment
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/MuhibChy/perfectitsecurity.git
-cd perfectitsecurity
+git clone https://github.com/MuhibChy/aisecurity3D.git
+cd aisecurity3D
 ```
 
 ### 2. Install Backend Dependencies
