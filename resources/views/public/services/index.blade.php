@@ -103,7 +103,7 @@
         <div class="mt-7 grid sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
             @foreach($featured->take(6) as $service)
             <article class="ais-card group overflow-hidden reveal flex flex-col">
-                <div class="h-28 relative flex items-center justify-center" style="background:{{ $artFor($service->category->slug ?? '') }};" aria-hidden="true">
+                <div class="term-panel p-4 h-28 relative flex items-center justify-center" style="background:{{ $artFor($service->category->slug ?? '') }};" aria-hidden="true">
                     <svg class="w-11 h-11" fill="none" viewBox="0 0 24 24" stroke="#BFE9FF" stroke-width="1.4">{!! $iconFor($service->category->slug ?? '') !!}</svg>
                     <div class="absolute inset-0" style="background:linear-gradient(180deg, transparent 30%, rgba(2,9,22,.85));"></div>
                 </div>
@@ -155,7 +155,7 @@
         <div class="mt-7 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3.5">
             @foreach($category->services as $service)
             <article class="ais-card group overflow-hidden reveal flex flex-col">
-                <div class="h-28 relative flex items-center justify-center" style="background:{{ $artFor($category->slug ?? '') }};" aria-hidden="true">
+                <div class="term-panel p-4 h-28 relative flex items-center justify-center" style="background:{{ $artFor($category->slug ?? '') }};" aria-hidden="true">
                     <svg class="w-11 h-11" fill="none" viewBox="0 0 24 24" stroke="#BFE9FF" stroke-width="1.4">{!! $iconFor($category->slug ?? '') !!}</svg>
                     <div class="absolute inset-0" style="background:linear-gradient(180deg, transparent 30%, rgba(2,9,22,.85));"></div>
                 </div>

@@ -11,7 +11,7 @@
         <a href="{{ route('portfolio.index') }}" class="ais-link text-sm">&larr; Back to Portfolio</a>
         <div class="mt-6 flex flex-wrap items-center gap-2">
             <span class="ais-badge">{{ $item->category ?? 'Project' }}</span>
-            @if($item->is_demo)<span class="ais-badge">Demo / sample profile</span>@endif
+            @if($item->is_demo)<span class="ais-badge">DEMO / SAMPLE PROFILE</span>@endif
         </div>
         <h1 id="portfolio-show-heading" class="ais-h2 mt-4 text-3xl sm:text-5xl leading-tight">{{ $item->title }}</h1>
         @if($item->client_name)<p class="mt-3 text-[12px] tracking-wide" style="color:#7FB7E8;">Client: {{ $item->client_name }}</p>@endif

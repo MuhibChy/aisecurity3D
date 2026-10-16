@@ -50,6 +50,7 @@ class GeminiProvider implements AiProviderInterface
             $text = (string) ($m['content'] ?? '');
             if ($role === 'system') {
                 $systemPrefix = $systemPrefix === null ? $text : $systemPrefix."\n".$text;
+
                 continue;
             }
             if ($systemPrefix !== null) {

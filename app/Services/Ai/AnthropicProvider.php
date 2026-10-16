@@ -55,6 +55,7 @@ class AnthropicProvider implements AiProviderInterface
             $content = (string) ($m['content'] ?? '');
             if ($role === 'system' && $system === null) {
                 $system = $content;
+
                 continue;
             }
             $converted[] = ['role' => $role === 'assistant' ? 'assistant' : 'user', 'content' => $content];

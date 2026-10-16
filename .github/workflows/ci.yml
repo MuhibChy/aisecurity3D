@@ -23,8 +23,7 @@ jobs:
       - name: Install Dependencies
         run: composer install --no-progress --prefer-dist
 
-      - name: Check PSR-12 (Pint, advisory — pre-existing style debt must not block tests/build)
-        continue-on-error: true
+      - name: Check PSR-12 (Pint)
         run: vendor/bin/pint --test
 
   tests:

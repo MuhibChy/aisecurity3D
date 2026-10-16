@@ -11,7 +11,7 @@
         <a href="{{ route('case-studies') }}" class="ais-link text-sm">&larr; Back to Case Studies</a>
         <div class="mt-6 flex flex-wrap items-center gap-2">
             <span class="ais-badge">{{ $item->industry ?? 'Case Study' }}</span>
-            @if($item->is_demo)<span class="ais-badge">Illustrative demo scenario</span>@endif
+            @if($item->is_demo)<span class="ais-badge">ILLUSTRATIVE DEMO SCENARIO</span>@endif
             @if($item->country)<span class="ais-badge">{{ $item->country }}</span>@endif
         </div>
         <h1 id="cs-show-heading" class="ais-h2 mt-4 text-3xl sm:text-5xl leading-tight">{{ $item->title }}</h1>

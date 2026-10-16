@@ -8,7 +8,7 @@
 
 <x-ais-page-hero
     eyebrow="Get a Quote"
-    title="Get a <span class='ais-title-hl'>Custom Quote</span>"
+    title="Get a <span class='ais-title-hl'>CUSTOM QUOTE</span>"
     lede="Tell us about your requirements and our solutions team will prepare a tailored proposal with transparent pricing. Free consultation, no obligation."
     :chips="[
         ['<path stroke-linecap=\'round\' stroke-linejoin=\'round\' d=\'M9 9h6v6H9zM4 4h5v5H4zM15 4h5v5h-5zM4 15h5v5H4zM15 15h5v5h-5z\'/>', 'AI Agents'],

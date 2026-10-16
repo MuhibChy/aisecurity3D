@@ -22,7 +22,7 @@
         })();
     </script>
 </head>
-<body class="bg-[#020916] text-white min-h-screen flex items-center justify-center p-4 sm:p-6 relative dark:bg-[#020916] dark:text-white" data-lights="auth">
+<body class="bg-black text-white min-h-screen flex items-center justify-center p-4 sm:p-6 relative dark:bg-black dark:text-white" data-lights="auth">
     <a href="#login-form" class="skip-link">Skip to login form</a>
 
     {{-- Terminal environment (one fixed CSS layer; zero JS) --}}
@@ -59,7 +59,7 @@
                 </div>
                 <div class="leading-none">
                     <span class="block font-display font-extrabold text-[14px] tracking-tight text-white">AI<span class="text-[#00CFFF]">Security</span></span>
-                    <span class="block text-[10px] tracking-[0.2em] uppercase mt-1" style="color:#7FB7E8;">Secure sign in</span>
+                    <span class="block text-[10px] tracking-[0.2em] uppercase mt-1" style="color:#7FB7E8;">AUTH://IDENTITY</span>
                 </div>
             </div>
 
@@ -106,7 +106,7 @@
                     </label>
                 </div>
 
-                <button type="submit" class="ais-btn-primary w-full !py-3.5 justify-center">
+                <button type="submit" class="term-btn w-full !py-3.5 justify-center">
                     LOGIN →
                 </button>
             </form>

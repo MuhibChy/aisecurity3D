@@ -64,7 +64,7 @@ class AiServiceController extends Controller
             ->where('id', '!=', $service->id)
             ->whereHas('category', fn ($q) => $q->whereIn('slug', self::AI_CATEGORY_SLUGS))
             ->with('category')
-            ->orderByRaw("CASE WHEN category_id = ? THEN 0 ELSE 1 END", [$service->category_id])
+            ->orderByRaw('CASE WHEN category_id = ? THEN 0 ELSE 1 END', [$service->category_id])
             ->orderBy('sort_order')
             ->limit(3)
             ->get();
